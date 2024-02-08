@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+
+.container{
+	background-color: black;
+}
+.main{
+    background-color:rgba(0, 0, 0, 0.918);
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+}
+nav{
+	width: 100%;
+	height: 80px;
+	background:#000000f8;
+	border: 1px solid gold;
+	border-top: black;
+	border-left: black;
+	border-right: black;
+	margin-bottom: 15px;
+}
+
+nav ul{
+	padding-right: 80px;
+}
+
+nav ul li a:hover{
+	color: gold;
+	transition: 0.8s;
+	text-decoration: underline;
+
+}
+
+
+label .logo{
+	font-size: 31px;
+	color:gold;
+	margin: 0 100p	x;
+	/* line-height: 80px; */
+}
+
+.logo{
+	font-family: 'Agbalumo', system-ui;
+	color: gold;
+	font-size: 45px;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+nav ul{
+	float: right;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+	padding: 8px 20px;
+}
+nav ul li a.active,a:hover{
+	background: #000000;
+}
+#checkbtn{
+	float: right;
+	line-height: 80px;
+	margin-right: 10px;
+	font-size: 35px;
+	color: white;
+	display: none;
+}
+#check{
+	display: none;
+}
+#check:checked ~ ul{
+	left: 0;
+}
+
+@media(max-width: 400px){
+	.logo{
+		font-size:26px;
+		margin:0px 30px;
+	}
+}
+@media(max-width: 895px){
+	label .logo{
+		margin:0px 30px;
+	}
+	#checkbtn{
+		display: block;
+	}
+	nav ul{
+		width: 100%;
+		height: 100vh;
+		background: #000000;
+		position: fixed;
+		top:80px;
+		left: -100%;
+		transition: .5s;
+	}
+	nav ul li{
+		display: block;
+		text-align: center;
+		line-height:50px;
+		margin:15px;
+	}
+	.logo{
+		font-size: 31px;
+	}
+}
+
+.banner{
+	display: flex;
+	width:100%;
+	background:rgba(0, 0, 0, 0.979);
+}
+
+
+@media(max-width: 500px){
+	#car1{
+		width: 100%;
+		height: 40vh;
+	}
+}
+
+#heading{
+	background-color: black;
+	color: gold;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 70px;
+
+}
+
+
+.banner img{
+	height: 4%;
+	width: 90%;
+	font-size: 50px;
+	color: white;
+	padding-top: 50px;
+	
+}
+
+.banner label{
+	color: white;
+	/* padding-top: 15%; */
+	padding-right: 20px;
+	font-family: 'REM', sans-serif;
+	font-size: 20px;
+	padding-left: 70px;
+	padding-top: 120px;
+	line-height: 30px;
+}
+
+.banner label h1{
+	padding-bottom: 30px;
+}
+
+#explore{
+	height: 55px;
+	width: 125px;
+	border-radius: 6px;
+	background-color: black;
+	border: 1px solid gold ;
+	color: gold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 10px 4px;
+	margin-top: 3px;
+	margin-left: 10px;
+	font-size: 16px;
+	margin-bottom: 226px;
+}
